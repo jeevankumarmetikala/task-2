@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify-ish Product Page</title>
+    <link rel="stylesheet" href="shopping.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>JK Store</h1>
+    </header>
+
+    <div class="controls">
+        <div class="control-group">
+            <label for="categoryFilter">search by Category:</label>
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Home">Home & Living</option>
+                <option value="Books">Books</option>
+            </select>
+        </div>
+
+        <div class="control-group">
+            <label for="sortOrder">Sort by:</label>
+            <select id="sortOrder">
+                <option value="default">Default</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A to Z</option>
+                <option value="name-desc">Name: Z to A</option>
+                <option value="rating-desc">Rating: High to Low</option>
+                <option value="rating-asc">Rating: Low to High</option>
+            </select>
+        </div>
+    </div>
+
+    <main id="productContainer" class="product-grid">
+    </main>
+
+    <script src="shopping.js"></script>
+</body>
+
+</html>
